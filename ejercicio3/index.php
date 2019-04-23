@@ -19,10 +19,13 @@ $registro=array(
     // Leer los datos del formulario
     
     function acceso(){
+        include 'indes.php';
+        
         $email = $_POST["id_user"];
         echo $email;
         $password = $_POST["id_pass"];
         echo $password;
+
         foreach($registro as $keys => $valor){
             if($keys == $email && $valor == $password){
                 echo "<a href=\"pagina.html\"></a>";
@@ -71,7 +74,7 @@ $registro=array(
             </div>
             </div>
             <center>
-                <input type="submit" class="btn btn-primary mb-2" name="ingresar" value="ingresar" onclick="acceso()" />
+                <input type="submit" class="btn btn-primary mb-2" name="ingresar" value="ingresar" onclick="acceso()"/>
             </center>
         </div>
         <div class="col-sm">
@@ -79,9 +82,6 @@ $registro=array(
         </div>
         </div>
     </div>
-
-
-    
     </form>
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
