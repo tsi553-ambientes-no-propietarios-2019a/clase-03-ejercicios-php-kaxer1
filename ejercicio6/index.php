@@ -110,12 +110,10 @@ http://buscapalabras.com.ar/palabras-con-las-cinco-vocales.html
         foreach($unir as $palabra){
             separar_letras(strtolower($palabra));
         }
-
         echo "</table>";
     }
 
     function separar_letras($plb){
-        //$arr_separar = strlen($plb);
         echo "<tr>";
         echo "<td><strong>$plb</strong></td>";
         echo "<td>";
